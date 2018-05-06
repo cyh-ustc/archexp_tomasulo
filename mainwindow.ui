@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>674</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tomasulo-Sim</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="InstrgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>391</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>指令</string>
+    </property>
+    <widget class="QComboBox" name="InstrcomboBox_0">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>210</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>240</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="InstrcomboBox_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>300</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>NOP</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NOP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>LDD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ADD.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUB.D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MULTD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DIV.D</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_0">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>120</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>180</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>240</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>270</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="destcomboBox_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>300</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_0">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>30</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_1">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>90</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>120</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>150</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_5">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>180</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_6">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>210</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_7">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>240</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_8">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>270</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source1comboBox_9">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>300</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_0">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>30</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_1">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>60</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>90</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>120</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>150</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_5">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>180</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_6">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>210</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_7">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>240</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_8">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>270</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="source2comboBox_9">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>300</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="SettinggroupBox">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>231</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>设定</string>
+    </property>
+    <widget class="QSpinBox" name="LoadTimespinBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="suffix">
+      <string>周期</string>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>2</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="AddSubTimespinBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>70</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="suffix">
+      <string>周期</string>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>2</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="MultTimespinBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="suffix">
+      <string>周期</string>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>2</number>
+     </property>
+     <property name="maximum">
+      <number>50</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="DivTimespinBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>150</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="suffix">
+      <string>周期</string>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>2</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>40</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Loadlabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>36</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>载入：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AddSubLoadlabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>42</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>加/减：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Multlabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>36</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>乘法：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Divlabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>160</y>
+       <width>36</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>除法：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="ControlgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>220</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>控制</string>
+    </property>
+    <widget class="QPushButton" name="SteppushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>步进</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ResetpushButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>复位</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Gotolabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>执行            步：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="StepslineEdit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="GopushButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>80</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StartpushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="InstrStatuslabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>48</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>指令状态</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Instrlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>121</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Issuelabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>51</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ExeSlabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>380</y>
+      <width>51</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ExeFlabel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>380</y>
+      <width>51</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WresFlabel">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>380</y>
+      <width>51</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Freglabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>380</y>
+      <width>61</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FregStatuslabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>360</y>
+      <width>60</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>寄存器状态</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FregQilabel">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>380</y>
+      <width>61</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FregValuelabel">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>380</y>
+      <width>65536</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>60</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保留站状态</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSTimelabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>41</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSNamelabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>560</y>
+      <width>41</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSBusylabel">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>560</y>
+      <width>41</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSOplabel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>560</y>
+      <width>41</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSVjlabel">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>560</y>
+      <width>61</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSVklabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>560</y>
+      <width>61</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSQjlabel">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>560</y>
+      <width>41</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RSQklabel">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>560</y>
+      <width>41</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Loadlabel_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>48</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load部件</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LoadNamelabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>670</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LoadBusylabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>670</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LoadAddrlabel">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>670</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LoadValuelabel">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>670</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <zorder>RSVjlabel</zorder>
+   <zorder>RSVklabel</zorder>
+   <zorder>InstrgroupBox</zorder>
+   <zorder>SettinggroupBox</zorder>
+   <zorder>ControlgroupBox</zorder>
+   <zorder>InstrStatuslabel</zorder>
+   <zorder>Instrlabel</zorder>
+   <zorder>Issuelabel</zorder>
+   <zorder>ExeSlabel</zorder>
+   <zorder>ExeFlabel</zorder>
+   <zorder>WresFlabel</zorder>
+   <zorder>Freglabel</zorder>
+   <zorder>FregStatuslabel</zorder>
+   <zorder>FregQilabel</zorder>
+   <zorder>FregValuelabel</zorder>
+   <zorder>RSlabel</zorder>
+   <zorder>RSTimelabel</zorder>
+   <zorder>RSNamelabel</zorder>
+   <zorder>RSBusylabel</zorder>
+   <zorder>RSOplabel</zorder>
+   <zorder>RSQjlabel</zorder>
+   <zorder>RSQklabel</zorder>
+   <zorder>Loadlabel_2</zorder>
+   <zorder>LoadNamelabel</zorder>
+   <zorder>LoadBusylabel</zorder>
+   <zorder>LoadAddrlabel</zorder>
+   <zorder>LoadValuelabel</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
