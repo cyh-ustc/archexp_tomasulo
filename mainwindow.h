@@ -50,6 +50,15 @@ private:
     QComboBox *dest[10];
     QComboBox *s1[10];
     QComboBox *s2[10];
+
+    unsigned int totalnum;
+    unsigned int insnum;
+    unsigned int nextins;
+
+    Instruction insarray[10];
+
+    void cyclectrl();
+
     void showTom();
 };
 

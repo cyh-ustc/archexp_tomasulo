@@ -420,13 +420,62 @@ void MainWindow::on_StartpushButton_clicked()
             }
         }
     }
+
     tom = new tomasulo(ins);
     tom->loadtime = ui->LoadTimespinBox->value();
     tom->addsubtime = ui->AddSubTimespinBox->value();
     tom->multtime = ui->MultTimespinBox->value();
     tom->divtime = ui->DivTimespinBox->value();
+    //showTom();
+    if(ui->checkBox->isChecked())
+    {
+        totalnum = tom->instr_num * ui->TimeslineEdit->text().toInt();
+        insnum = tom->instr_num;
+        nextins = tom->instr_num;
+        for(int i = 0; i < insnum; ++i)
+            insarray[i] = tom->ins[i];
+        cyclectrl();
+    }
+
     showTom();
 }
+void MainWindow::cyclectrl()
+{
+    for(int i = 0; i < tom->instr_num; ++i)
+        if(tom->ins[i].writeresult > 0)
+        {
+            for(int j = i + 1; j < tom->instr_num; ++j)
+                tom->ins[j - 1] = tom->ins[j];
+            tom->ins[tom->instr_num-1].itype = InstrType::nop;
+            tom->ins[tom->instr_num-1].addr = "";
+            tom->ins[tom->instr_num-1].dest = -1;
+            tom->ins[tom->instr_num-1].executefinish = -1;
+            tom->ins[tom->instr_num-1].executestart = -1;
+            tom->ins[tom->instr_num-1].issue = -1;
+            tom->ins[tom->instr_num-1].RSindex = -1;
+            tom->ins[tom->instr_num-1].source1 = -1;
+            tom->ins[tom->instr_num-1].source2 = -1;
+            tom->ins[tom->instr_num-1].writeresult = -1;
+            tom->instr_num--;
+        }
+    for(int i = tom->instr_num; i < 10; ++i)
+    {
+        if(nextins < totalnum)
+        {
+            tom->ins[i] = insarray[nextins % insnum];
+            tom->ins[i].executefinish = -1;
+            tom->ins[i].executestart = -1;
+            tom->ins[i].issue = -1;
+            tom->ins[i].RSindex = -1;
+            tom->ins[i].writeresult = -1;
+            nextins++;
+            tom->instr_num++;
+        }
+        else
+            break;
+    }
+}
+
 void MainWindow::showTom()
 {
     QString s = "指令";
@@ -569,12 +618,18 @@ void MainWindow::showTom()
 void MainWindow::on_SteppushButton_clicked()
 {
     tom->step1cycle();
+    if(ui->checkBox->isChecked())
+        cyclectrl();
     showTom();
 }
 
 void MainWindow::on_GopushButton_clicked()
 {
     for(int i = 0; i < ui->StepslineEdit->text().toInt();++i)
+    {
         tom->step1cycle();
+        if(ui->checkBox->isChecked())
+            cyclectrl();
+    }
     showTom();
 }

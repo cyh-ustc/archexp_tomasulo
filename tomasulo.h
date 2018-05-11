@@ -1,7 +1,7 @@
 #ifndef TOMASULO_H
 #define TOMASULO_H
 
-#endif // TOMASULO_H
+
 #include <QString>
 
 enum InstrType
@@ -84,3 +84,4 @@ public:
     void step1cycle();
 
 };
+#endif // TOMASULO_H
